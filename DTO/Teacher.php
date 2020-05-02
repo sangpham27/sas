@@ -1,7 +1,7 @@
 <?php
 namespace DTO;
 
-class teacher {
+class Teacher {
     private $teacher_id;
     private $teacher_name;
     private $teacher_address;

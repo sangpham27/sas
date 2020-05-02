@@ -1,13 +1,15 @@
 <?php
 namespace DTO;
 
-class grade {
-    private $grade_id;
-    private $grade_name;
+class Admin {
+    private $admin_id;
+    private $admin_user_name;
+    private $admin_password;
 
     public function __construct(){
-        $this->grade_id = 0;
-        $this->grade_name = "";
+        $this->admin_id = 0;
+        $this->admin_user_name ="";
+        $this->admin_password = "";
     }
 
     public function __set($name, $value){
@@ -18,4 +20,7 @@ class grade {
     public function __get($name){
         return isset($this->$name) ? $this->$name : null;
     }
+
 }
+?>
+
