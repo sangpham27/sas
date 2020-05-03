@@ -1,37 +1,41 @@
 <?php 
 namespace BUS;
 
+use DAO\AdminDAO;
+use DAO\GradeDAO;
+use DAO\StudentDAO;
 use DAO\TeacherDAO;
+use DAO\AttendanceDAO;
 
-class TeacherBus {
-    private $teacherDAO;
+class AdminBus {
+    private $adminDAO;
     
     public function __construct(){
-        $this->teacherDAO = new TeacherDAO();
+        $this->adminDAO = new AdminDAO();
     }
 
     public function __destruct(){
-        unset($this->teacherDAO);
+        unset($this->adminDAO);
     }
 
     public function getAll(){
-        return $this->teacherDAO->getAll();
+        return $this->adminDAO->getAll();
     }
 
     public function getByID($id) {
-        return $this->teacherDAO->getByID($id);
+        return $this->adminDAO->getByID($id);
     }
 
-    public function Insert($teacher) {
-        return $this->teacherDAO->Insert($teacher);
+    public function Insert($admin) {
+        return $this->adminDAO->Insert($admin);
     }
 
-    public function Update($teacher) {
-        return $this->teacherDAO->Update($teacher);
+    public function Update($admin) {
+        return $this->adminDAO->Update($admin);
     }
 
-    public function Delete($teacher) {
-        return $this->teacherDAO->Delete($teacher);
+    public function Delete($admin) {
+        return $this->adminDAO->Delete($admin);
     }
 
 }
