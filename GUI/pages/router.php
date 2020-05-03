@@ -9,7 +9,7 @@
             include("./GUI/pages/index/index.php");
             break;
         case 2: 
-            // include("./GUI/pages/signIn/index.php");
+            // include("./GUI/pages/login/index.php");
         default:
-            // include("./GUI/pages/error/index.php");
+            include("./GUI/pages/error/index.php");
     }
