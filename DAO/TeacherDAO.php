@@ -46,11 +46,11 @@ class TeacherDAO extends Database {
         return null;
 
         $teacher = new Teacher();
-        $teacher->teacher_id = $obj->teacher_id;
-        $teacher->teacher_name = $obj->teacher_name;
-        $teacher->teacher_address = $obj->teacher_address;
-        $teacher->teacher_doj = $obj->teacher_doj;
-        $teacher->teacher_grade_id = $obj->teacher_grade_id;
+        $teacher->teacher_id = $objects->teacher_id;
+        $teacher->teacher_name = $objects->teacher_name;
+        $teacher->teacher_address = $objects->teacher_address;
+        $teacher->teacher_doj = $objects->teacher_doj;
+        $teacher->teacher_grade_id = $objects->teacher_grade_id;
     
         return $teacher;
     }

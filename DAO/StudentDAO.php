@@ -46,11 +46,11 @@ class StudentDAO extends Database {
         return null;
 
         $student = new Student();
-        $student->student_id = $obj->student_id;
-        $student->student_name = $obj->student_name;
-        $student->student_roll_number = $obj->student_roll_number;
-        $student->student_dob = $obj->student_dob;
-        $student->student_grade_id = $obj->student_grade_id;
+        $student->student_id = $objects->student_id;
+        $student->student_name = $objects->student_name;
+        $student->student_roll_number = $objects->student_roll_number;
+        $student->student_dob = $objects->student_dob;
+        $student->student_grade_id = $objects->student_grade_id;
     
         return $student;
     }

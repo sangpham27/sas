@@ -44,9 +44,9 @@ class AdminDAO extends Database {
         return null;
 
         $acc = new Admin();
-        $acc->admin_id = $obj->admin_id;
-        $acc->admin_user_name = $obj->admin_user_name;
-        $acc->admin_password = $obj->admin_password;
+        $acc->admin_id = $objects->admin_id;
+        $acc->admin_user_name = $objects->admin_user_name;
+        $acc->admin_password = $objects->admin_password;
     
         return $acc;
     }

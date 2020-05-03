@@ -46,11 +46,11 @@ class AttendanceDAO extends Database {
         return null;
 
         $attendance = new Attendance();
-        $attendance->attendance_id = $obj->attendance_id;
-        $attendance->student_id = $obj->student_id;
-        $attendance->attendance_status = $obj->attendance_status;
-        $attendance->attendance_date = $obj->attendance_date;
-        $attendance->teacher_id = $obj->teacher_id;
+        $attendance->attendance_id = $objects->attendance_id;
+        $attendance->student_id = $objects->student_id;
+        $attendance->attendance_status = $objects->attendance_status;
+        $attendance->attendance_date = $objects->attendance_date;
+        $attendance->teacher_id = $objects->teacher_id;
     
         return $attendance;
     }

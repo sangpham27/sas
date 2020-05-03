@@ -43,8 +43,8 @@ class GradeDAO extends Database {
         return null;
 
         $grade = new Grade();
-        $grade->grade_id = $obj->grade_id;
-        $grade->grade_name = $obj->grade_name;
+        $grade->grade_id = $objects->grade_id;
+        $grade->grade_name = $objects->grade_name;
     
         return $grade;
     }
