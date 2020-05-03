@@ -74,7 +74,7 @@ class AdminDAO extends Database {
     {
         $query = "DELETE FROM `tbl_admin` WHERE admin_id= :admin_id";
         $this->query($query);
-        $this->bind("admin_id",$admin_id);
+        $this->bind("admin_id",$admin->admin_id);
         return $this->execute();
     }
 
